@@ -5,6 +5,19 @@
     font-family: sans-serif;
 }
 
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translatey(10px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
+
 
 body {
     background: #061220;
@@ -20,6 +33,7 @@ body {
 .header {
     text-align: center;
     margin-bottom: 30px;
+    animation: 1s fadein ease ;
 }
 
 .theme-btn {
@@ -127,6 +141,7 @@ body.light-theme .daily-card {
     display: flex;
     gap: 10px;
     margin-bottom: 25px;
+    animation: 1s fadein ease ;
 }
 
 .search-box input {
@@ -164,6 +179,7 @@ body.light-theme .daily-card {
     padding: 25px;
     border-radius: 20px;
     margin-bottom: 20px;
+    animation: 1s fadein ease ;
 }
 
 .location h3 {
@@ -213,6 +229,7 @@ body.light-theme .daily-card {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
     margin-bottom: 25px;
+    animation: 1s fadein ease ;
 }
 
 .detail-card {
@@ -329,11 +346,11 @@ footer {
     }
 
     .weather-main {
-        gap: 12px;
+        gap: 8px;
     }
 
     .weather-icon span {
-        font-size: 55px;
+        font-size: 25px;
     }
 
     .theme-btn {
